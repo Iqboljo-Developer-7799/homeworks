@@ -1,0 +1,50 @@
+@use "../util" as *;
+.resume {
+  background-color: rgb(235, 235, 235);
+
+  &__info {
+    text-align: center;
+    h4 {
+      color: rgb(255, 1, 118);
+      font-size: rem(20);
+    }
+    h2 {
+      color: rgba(0, 0, 0, 0.9);
+      font-size: rem(34);
+    }
+    p {
+      font-family: serif;
+      max-width: rem(650);
+      line-height: 1.6;
+    }
+  }
+  .experiences {
+    margin-top: rem(80);
+    h4 {
+      text-align: center;
+      color: rgb(255, 1, 118);
+    }
+    .experience-wrapper {
+      max-width: rem(1000);
+      @media (max-width: rem(880)) {
+        .experience-wrapper__item {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+      .e-w-i-info {
+        width: 70%;
+      }
+      .e-w-i-icon {
+        width: 30%;
+      }
+      .e-w-i-description {
+        p {
+          font-size: rem(14);
+          color: darkgreen;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}

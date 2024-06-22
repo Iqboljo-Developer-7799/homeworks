@@ -1,0 +1,17 @@
+@use "../util" as *;
+.bg-img {
+  position: fixed;
+  inset-inline: 0;
+  min-height: rem(740);
+  background-image: url("../../../images/bg-banner/intro-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(28, 28, 28, 0.7);
+  }
+}

@@ -1,0 +1,21 @@
+@use "../util" as *;
+
+.header {
+  position: fixed;
+  inset: 0 auto auto 10%;
+  box-shadow: 0 0 0.6rem 0.4rem black;
+  transition: all 0.5s ease;
+  z-index: 1;
+  @media (max-width: rem(660)) {
+    left: 0;
+  }
+  a {
+    transition: all 200ms ease;
+  }
+  i {
+    width: 2rem;
+  }
+  .hide {
+    display: none;
+  }
+}
